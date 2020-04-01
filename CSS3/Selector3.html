@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <link rel="stylesheet" href="/HTML/css/normalize.css"/>
+    <link rel="stylesheet" href="/HTML/css/stylecss.css"/>
+    <style>
+        /* 인접 형제 셀렉터*/
+        /* div 요소 바로 뒤에 위치하는 ul요소 선택 */
+        div + ul { color : yellowgreen;}
+        /* p 요소 바로 뒤에 위치하는 모든 ul요소 선택 */ 
+        p ~ ul { color :antiquewhite;}
+        
+    </style>
+</head>
+<body>
+    <div> a div element.</div>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <p>The first paragraph.</p>
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+  
+    <h2>Another list</h2>
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+
+    
+    <hr>
+    <a href="/index.html">Index</a>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>    
+    <link rel="stylesheet" href="/HTML/css/normalize.css"/>
+    <link rel="stylesheet" href="/HTML/css/stylecss.css"/>
+    <style>
+        /* p 요소 중 첫번쨰 자식 선택 */
+        p:first-child { color : antiquewhite;}
+        /* p 요소 중에서 마지막 자식을 선택 */
+        p:last-child {color : orangered;}
+        /* body 요소의 두번째 p 요소는 마지막 자식 요소가 아니다.
+       body 요소의 마지막 자식 요소는 div 요소이다. */
+    </style>
+</head>
+<body>
+    <p>Body first child</p>
+    <h1>Welcome to my home</h1>
+    <p>body first not child</p>
+    <div>
+        <p>div first child</p>
+        <p>div first not child</p>
+    </div>
+    <hr>
+    <a href="/index.html"><input type="button" value="Index"></a>
+</body>
+</html>

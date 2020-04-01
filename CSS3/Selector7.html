@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <link rel="stylesheet" href="/HTML/css/normalize.css"/>
+    <link rel="stylesheet" href="/HTML/css/stylecss.css"/>
+    <style>
+    /* ol 요소의 자식 요소인 li 요소 중에서 짝수번째 요소만을 선택 */
+        ol > li:nth-child(2n) { color : green;}
+    /* ol 요소의 자식 요소인 li 요소 중에서 홀수번째 요소만을 선택 */
+        ol > li:nth-child(2n+1) { color : orange;}
+
+    /* ol 요소의 자식 요소인 li 요소 중에서 첫번쨰 요소만을 선택 */
+        ol > li:first-child { color : black;}
+    /* ol 요소의 자식 요소인 li 요소 중에서 마지막 요소만을 선택 */
+        ol> li:last-child { color : wheat;}
+    /* ul 요소의 모든 자식 요소 중에서 뒤에서부터 시작하여 홀수번째 요소만을 선택 */
+        ul> li:nth-last-child(2n+1) { color : purple;}
+    /* ul 요소의 모든 자식 요소 중에서 뒤에서부터 시작하여 짝수번째 요소만을 선택 */
+        ul > li:nth-last-child(2n) { color : red}
+    </style>
+</head>
+<body>
+    <ol>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+        <li>d</li>
+        <li>e</li>
+        <li>f</li>
+    </ol>
+    <ul>
+        <li>ㄱ</li>
+        <li>ㄴ</li>
+        <li>ㄷ</li>
+        <li>ㄹ</li>
+        <li>ㅁ</li>
+        <li>ㅂ</li>
+    </ul>
+    <hr>
+    <a href="/index.html"><input type="button" value="Index"></a>
+</body>
+
+</html>

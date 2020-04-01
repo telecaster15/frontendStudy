@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <link rel="stylesheet" href="/HTML/css/normalize.css"/>
+    <link rel="stylesheet" href="/HTML/css/stylecss.css"/>
+
+    <style>
+        /* input 요소가 사용 가능한 상태일 때,
+       input 요소 바로 뒤에 위치하는 인접 형제 span 요소를 선택 */
+        input:enabled + span { color : seagreen;}
+        /* input 요소가 사용 불가능한 상태일 때,
+       input 요소 바로 뒤에 위치하는 인접 형제 span 요소를 선택 */
+        input:disabled + span { color : red; text-decoration: line-through;}
+        /* input 요소가 체크 상태일 때,
+       input 요소 바로 뒤에 위치하는 인접 형제 span 요소를 선택 */
+        input:checked + span { color : orange;}
+    </style>
+
+</head>
+<body>
+    
+    <input type="radio" name="gender" checked value="male"><span>Male</span>
+    <input type="radio" name="gender" value="female"><span>Female</span>
+    <input disabled type="radio" name="gender" value="neuter"><span>Neuter</span>
+<hr>
+    <input type="checkbox" name="checkbox" checked="checked" value="bicycle">
+    <span>I have a bicycle</span>
+    <input type="checkbox" name="checkbox"  value="car">
+    <span>I have a car</span>
+    <input disabled type="checkbox" name="checkbox"  value="motorcycle">
+    <span>I have a motorcycle</span>
+
+    
+
+    <hr>
+    <a href="/index.html">Index</a>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <link rel="stylesheet" href="/HTML/css/normalize.css"/>
+    <link rel="stylesheet" href="/HTML/css/stylecss.css"/>
+    <!-- a:hover -->
+    <style>
+        /* a 요소가 hover 상태일 때 */
+        a:hover {color : red; font-weight: bold;}
+        /* input 요소가 focus 상태일 때 */
+        input:focus {background-color :rgb(21, 124, 0);}
+        /* a 요소가 방문하지 않은 링크일 때 */
+        a:link { color : blue;}
+        /* a 요소가 방문한 링크일 때 */
+        a:visited { color : rgb(222, 225, 65);}
+        /* a 요소가 클릭된 상태일 때 */
+        a:active { color : hotpink}
+
+        /* text input 요소와 password input 요소에 포커스가 들어와 있을 때 */
+        input[type=text]:focus,
+        input[type=password]:focus{color :orangered;}
+    </style>
+</head>
+<body>
+    <ul>
+        <h1>가상클래스 셀렉터 .=> s:p </h1>
+        <li>마우스가 올라와 있을 때</li>
+        <li>링크를 방문했을 때와 아직 방문하지 않았을 때</li>
+        <li>포커스가 들어와 있을 떄</li>
+    </ul>
+    <a href="https://google.com">Hover me</a><br>
+    <input type="text" placeholder="focuse me">
+<hr>
+    <a href="#" target="_blank">This is a link</a><br>
+    <input disabled type="text" value="I'll be red when focused"><br>
+    <input type="password" value="I'll be red when focused">
+    <hr>
+    <select name="" id="">
+        <option value="">A</option>
+        <option value="" disabled>B - 매진</option>
+        <option value="">C</option>
+
+    </select>
+    <hr>
+    <a href="/index.html">Index</a>
+</body>
+</html>

@@ -7,25 +7,25 @@
     <link rel="stylesheet" href="/HTML/css/style.css"/>
 </head>
 <body>
-    <h4 action="/join.jsp" method="POST">
+    <form action="/join.jsp" method="GET">
         <h1>Input</h1>
 
         <br><br>
         <h3>버튼</h3>
         <input type="button" name="" value="button">
         <h3>체크박스</h3>
-        <input type="checkbox" name="fruit" value="사과"> 사과
-        <input type="checkbox" name="fruit" value="포도"> 포도
-        <input type="checkbox" name="fruit" value="복숭아"> 복숭아
-        <input type="checkbox" name="fruit" value="오렌지"> 오렌지
-        <input type="submit" name="" value="action으로 보내기">
+        <input type="checkbox" name="fruit" value="Apple"> 사과
+        <input type="checkbox" name="fruit" value="Grape"> 포도
+        <input type="checkbox" name="fruit" value="Peach"> 복숭아
+        <input type="checkbox" name="fruit" value="Orange"> 오렌지
+        
         <h3>색상</h3>
         <input type="color" name="mycolor">
         <h3>
         날짜
         </h3>
         <input type="datetime-local" name="datetime"> 
-        </form>
+        
         <h3>이메일</h3>
         <input type="email" name="useremail">
         <h3>파일</h3>
@@ -38,5 +38,25 @@
         <input type="month" name="month" id="">
         <h3>숫자</h3>
         <input type="number" name="num" id="">
+        <h3>Password</h3>
+        <input type="password" name="password" id="">
+        <h3>Radio</h3>
+        <input type="radio" name="gender" value="m" checked>남자<br>
+        <input type="radio" name="gender" value="w">여자<br>
+        <input type="radio" name="number" value="1" checked>1<br>
+        <input type="radio" name="number" value="2">2<br>
+        <input type="radio" name="number" value="3">3<br>
+        <h3>Range</h3>
+        <input type="range" name="points" min="0" max="10" step="1" value="5">
+        <h3>Text</h3>
+        <input type="text" name="userId">
+        <h3>Reset</h3>
+        <input type="reset">
+<br><Br>
+        <input type="submit" name="" value="action으로 보내기">
+    
+        <hr>
+        <a href="/index.html"><input type="button" value="Index"></a>
+    </form>
 </body>
 </html>
