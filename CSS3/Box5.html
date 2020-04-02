@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box</title>
+    <link rel="stylesheet" href="/HTML/css/normalize.css"/>
+    <link rel="stylesheet" href="/HTML/css/stylecss.css"/>
+
+    <style>
+        /*width, height 프로퍼티 값은 content 영역을 의미*/
+        .content-box{
+            width: 600px;
+            border:10px solid;
+            padding:50px;
+            margin:50px;
+            background-color: rgb(216, 90, 90);
+        }
+        /* width, height 프로퍼티 값은 content 영역, padding, border가 포함된 값을 의미 */
+        .border-box{
+            box-sizing: border-box;
+            width: 600px;
+            border: 10px solid;
+            padding:50px;
+            margin: 50px;
+            background-color: rgb(216, 90, 90);
+        }
+
+    </style>
+</head>
+<body>
+<div class="content-box">content-box</div>
+<div class="border-box">border-box</div>
+    <hr><center>
+        <a href="/index.html"><input type="button" value="Index"></a>
+    </center>
+</body>
+</html>

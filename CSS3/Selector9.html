@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <link rel="stylesheet" href="/HTML/css/normalize.css"/>
+    <link rel="stylesheet" href="/HTML/css/stylecss.css"/>
+<style>
+    /* input 요소 중 type 어트리뷰트의 값이 password가 아닌 요소 선택 */
+    input:not([type=password]){
+        background: yellowgreen;
+    }
+</style>
+</head>
+<body>
+    <input type="text" value="Text input">
+    <input type="email" value="Email input">
+    <input type="password" value="Password input">
+
+    <hr>
+    <a href="/index.html"><input type="button" value="Index"></a>
+</body>
+</html>

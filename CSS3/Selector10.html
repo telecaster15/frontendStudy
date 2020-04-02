@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <link rel="stylesheet" href="/HTML/css/normalize.css"/>
+    <link rel="stylesheet" href="/HTML/css/stylecss.css"/>
+
+    <style>
+        /* 조건 정확 */
+        input[type="text"]:valid{
+            background: greenyellow;
+        }
+        /* 조건 부정확 */
+        input[type="text"]:invalid{
+            background: red
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <label> 반드시 입력<br>
+            <input type="text" required>
+        </label>
+        <br>
+        <lable> 특수문자를 포함하지 않는 4자리 문자 또는 숫자<br>
+            <input type="text" value="ab1!" 
+                pattern="[a-zA-Z0-9]{4}" required>
+        </lable>
+        <br>
+        <label>핸드폰 번호 형식(xxx-xxxx-xxxx)<br>
+            <input type="text" 
+            value="010-1111-2222"
+            pattern="^\d{3}-\d{3,4}-\d{4}$" required>
+        </label>
+    </form>
+    <hr>
+    <a href="/index.html"><input type="button" value="Index"></a>
+</body>
+</html>

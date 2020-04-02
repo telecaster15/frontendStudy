@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <link rel="stylesheet" href="/HTML/css/normalize.css"/>
+    <link rel="stylesheet" href="/HTML/css/stylecss.css"/>
+    <style>
+        /* p 요소 콘텐츠의 첫글자 선택 */
+        p::first-letter { font-size: 3em;}
+        /* p 요소 컨텐츠의 첫줄을 선택 */
+        p::first-line {font-style: italic;}
+
+        /* h1 요소 앞 공간에 content 어트리뷰트 값 삽입 */
+        h1::before{
+            content:"HTML, ";
+            color: orangered;
+        } 
+        /* h1 요소 뒷 공간에 content 어트리뷰트 값 삽입 */ 
+        h1::after{
+            content: ", and CSS3";
+            color:brown;
+        }
+
+        ::selection{
+            color : tomato;
+            background: wheat;
+        }
+</style>
+</head>
+<body>
+    <h1>This is heading</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse earum, odit tenetur nemo, quisquam fuga laboriosam quaerat veniam ratione soluta amet autem voluptatum quod omnis libero cumque provident non pariatur.</p>
+
+    <hr>
+    <a href="/index.html"><input type="button" value="Index"></a>
+</body>
+</html>

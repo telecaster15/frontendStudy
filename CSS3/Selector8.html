@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <link rel="stylesheet" href="/HTML/css/normalize.css"/>
+    <link rel="stylesheet" href="/HTML/css/stylecss.css"/>
+
+    <style>
+        /* p 부모 요소의 자식 요소 중 첫번째 등장하는 p 요소 */
+        p:first-of-type { color : black;}
+        /* p 부모 요소의 자식 요소 중 마지막 등장하는 p 요소 */
+        P:last-of-type { color : yellow;}
+        /* p 부모 요소의 자식 요소 중 ()번째 등장하는 p 요소 */
+        p:nth-of-type(2) {color : greenyellow}
+        /* p 부모 요소의 자식 요소 중 뒤에서 ()번째 등장하는 p 요소 */
+        p:nth-last-of-type(2) {color : goldenrod}
+
+        p:first-child {background:red;}
+
+    </style>
+
+</head>
+<body>
+    <h1>heading</h1>
+    <p>first</p>
+    <p>second</p>
+    <p>third</p>
+    <p>fourth</p>
+    <div>
+        <h1>Heading</h1>
+            <p>First</p>
+            <p>Second</p>
+            <p>Third</p>
+            <p>fourth</p>
+    </div>
+
+    <hr>
+    <a href="/index.html"><input type="button" value="Index"></a>
+</body>
+</html>

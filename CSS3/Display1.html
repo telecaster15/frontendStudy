@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <link rel="stylesheet" href="/HTML/css/normalize.css"/>
+    <link rel="stylesheet" href="/HTML/css/stylecss.css"/>
+  
+    <style>
+        div:nth-of-type(1){
+            background-color: antiquewhite;
+            padding: 20px;
+        }
+        div:nth-of-type(2){
+            background-color: lightcoral;
+            padding: 20px;
+            width:300px
+        }
+
+        span{
+            background-color: lightslategray;
+            color:darkred;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Block</h1>
+    <ul>
+        <li>항상 새로운 라인에서</li>
+        <li>화면 전체 크기</li>
+        <li>width,heigth,margin,padding 지정</li>
+        <li>inline</li>
+        <li>div,h1~h6,p,ol,ul,li,hr,table,form</li>
+    </ul>
+<div>
+    <h2>block h2</h2>
+    <p>w,h x -> width=100%, height=auto</p>
+</div>
+<div>
+    <h1>block h1</h1>
+    <p>w 200,h x width=300px, height=auto</p>
+</div><br><br>
+<!-- inline - 새로운 라인에서 시작 안함 
+            - contents 크기 너비 컨텐츠 크기
+            - <span> 4px </span>
+            - inline block
+            - span, a, strong, img, br, input, select, button -->
+
+    <h1>my <span>Important</span> Heading</h1> 
+    <span>Inline</span>
+    <span>Inline</span><span>Inline</span>      
+    <hr><center>
+        <a href="/index.html"><input type="button" value="Index"></a>
+    </center>
+</body>
+</html>
