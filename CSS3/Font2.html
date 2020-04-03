@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font</title>
+    <link rel="stylesheet" href="/HTML/css/stylecss.css"/>
+
+    <style>
+        .small{
+            line-height: 70%;
+        }
+        .big{
+            line-height: 1.2;
+        }
+        .lh-3x{
+            line-height: 3.0;
+        }
+        .button{
+            width: 150px;
+            height: 70px;
+            background-color:rgb(255, 115, 0);
+            border-radius: 30px;
+            box-shadow: 5px 2px 5px;
+        }
+        .button > a{
+            display: block;
+            font: italic bold 2em/70px Arial;
+            text-decoration: none;
+            text-align: center;
+        }
+/* 글자 간격 설정  */
+        .loose{
+            letter-spacing: 2px;
+        }
+        .tight{
+            letter-spacing: -2px;
+        }
+    </style>
+</head>
+<body> 
+    <div class="button">
+        <a href="/index.html">HOME</a>
+    </div>
+<p>
+    default line-height. <br>
+    default line-height. <br>
+    대부부 브라우저의 default line height는 약 110% ~ 120%.<br>
+</p>
+<hr>
+<p class="small">
+    line-height : 70%<br>
+    line-height : 70%<br>
+</p>
+
+<p class="big">
+    line-height: 1.2<br>
+    line-height: 1.2<br>
+</p>
+<p class="lh-3x">
+    line-height: 3.0<br>
+    line-height: 3.0<br>
+</p>
+
+<p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab ex iusto a. Atque tempora incidunt quo debitis inventore repellendus.
+    Consectetur quod accusamus voluptate expedita mollitia aspernatur illo a odit sapiente?
+</p>
+<p class="loose">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, nihil numquam quisquam accusantium quis minus quaerat doloribus excepturi a ipsa ab porro sit necessitatibus pariatur dignissimos praesentium aliquam blanditiis. Atque!</p>
+
+<p class="tight">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui labore eum cumque ad, laborum odit vel possimus numquam dolorum, ipsa, excepturi similique fuga nostrum. Voluptates quidem harum iste iure itaque.
+</p>
+<hr><center>
+    <a href="/index.html"><input type="button" value="Index"></a>
+</center>
+    
+</body>
+</html>

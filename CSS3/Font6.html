@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font</title>   
+
+   <link rel="stylesheet" href="/HTML/css/stylecss.css"/>
+    <style>
+        div{
+            width: 150px;
+            height: 150px;
+            padding : 10px;
+            margin:40px;
+            border-radius: 6px;
+            border-color: gray;
+            border-style: groove;
+            /* white-space: nowrap; 자동 줄바꿈 방지 */
+            /* overflow: hidden; 반드시 visible 이외의 값 지정*/
+        }
+        .clip{text-overflow: clip;}
+        .ellipsis{text-overflow: ellipsis;}
+        .word-wrap {word-wrap: break-word; }
+    </style>
+</head>
+
+<body>
+    <h1>text-overflow</h1>
+    <div class="clip">
+        <h3>clip</h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </div>
+    <div class="ellipsis">
+        <h3>ellipsis</h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, eius facilis eveniet repellat eaque error. 
+    </div>
+
+    <h3>word-wrap</h3>
+    <div>
+      Floccinaucinihilipilification https://poiemaweb.com/css3-font-text
+      </div>
+    <div class="word-wrap">
+      Floccinaucinihilipilification https://poiemaweb.com/css3-font-text
+    </div>
+    <hr><center>
+        <a href="/index.html"><input type="button" value="Index"></a>
+    </center>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <link rel="stylesheet" href="/HTML/css/normalize.css"/>
+    <link rel="stylesheet" href="/HTML/css/stylecss.css"/>
+    <style>
+        body{
+            margin: 0;
+        }
+        div{
+            background-image: 
+            url("https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_324x112dp.png");
+            background-size: 120px;
+            background-color: rgb(255, 94, 0);
+            background-repeat: no-repeat;
+            width: 50vw;
+            height:100px;
+            margin-bottom: 5vw;
+            float: left;
+            color: rgb(0, 0, 0);
+        }
+        div:not(:nth-of-type(3n+1)){
+            margin-left: 2vw;
+        }
+        .example1{
+            background-position: top;
+        }
+        .example2{
+            background-position: bottom;
+        }
+        .example3 {
+            background-position: center;
+        }
+        .example4{
+            background-position: left;
+        }
+        .example5{
+            background-position: right;
+        }
+        .example6{
+            background-position: 25% 75%;
+        }
+        .example7
+        {background-position: 10px 20px
+        ;}
+        .example8{
+            background-image: 
+            url("https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_324x112dp.png"),
+             url("https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png");
+            background-size: 120px;
+            background-position: 0px 0px, center;
+        }
+        .example9{
+            background:#ffee99 url("https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png") no-repeat left;
+        }
+    </style>
+</head>
+<body>
+    <div>default(0%,0%)</div>
+    <div class="example1">top</div>
+    <div class="example2">bottom</div>
+    <div class="example3">center</div>
+    <div class="example4">left</div>
+    <div class="example5">right</div>
+    <div class="example6">25% 75%</div>
+    <div class="example7">10px 20px</div>
+    <div class="example8">0px 0px, center</div>
+    <div class="example9">#ffee99 img no-repeat left</div>
+
+
+
+    <hr><center>
+        <a href="/index.html"><input type="button" value="Index"></a>
+    </center>
+</body>
+</html>

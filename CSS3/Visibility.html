@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility</title>
+    <link rel="stylesheet" href="/HTML/css/normalize.css"/>
+    <link rel="stylesheet" href="/HTML/css/stylecss.css"/>
+
+    <style>
+        .visible{visibility: visible; }
+        .hidden{visibility: hidden;}
+
+        table, td{border: 1px solid black;}
+        /* 테이블 요소의 행이나 열 보이지 않게 */
+        .collapse{visibility: collapse;}
+    </style>
+</head>
+<body>
+    <h1 class="visible">visibility: visible</h1>
+    <h1 class="hidden">visibility: hidden</h1>
+    <h1 style="display:none">display:none</h1>
+    
+ <table>
+    <tr>
+      <td>A</td>
+      <td>B</td>
+    </tr>
+    <tr class="collapse">
+      <td>C</td>
+      <td>D</td>
+    </tr>
+  </table>
+
+    <hr><center>
+        <a href="/index.html"><input type="button" value="Index"></a>
+    </center>
+</body>
+</html>
