@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <!-- <link rel="stylesheet" href="/HTML/css/reset.css"> -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+     
+      
+
+        body{
+            font-family: sans-serif;
+            color: darkgrey;
+            background-color: rgb(255, 255, 255)
+            
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        header{
+            widows: 100%;
+            height: 60px;
+            background-color:rgb(255, 255, 255);
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(0, 0, 0, 0.05);
+        }
+        nav{
+            float: right;
+        }
+        .logo{
+            display: inline;
+            height: 60px;
+            margin: 12px 0 12px 25px;
+        }
+        .logo > img { height:36px;}
+        .nav-it > li{
+            display: inline-block;
+        }
+        .nav-it > li > a {
+            line-height: 60px;
+            padding: 0 30px;
+            color: rgba(0, 0, 0, 0.4);
+        }
+        .nav-it > li > a:hover{
+            color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+    
+         <div id="wrap">
+        <header>
+            <a class="logo" href="">
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="logo" height="60px">
+            </a>
+            <nav>
+                <ul class="nav-it">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="content-wrap">
+            <aside>
+                <h1>Aside</h1>
+                <ul>
+                    <li><a href="#" class="active">London</a></li>
+                    <li><a href="#">Paris</a></li>
+                    <li><a href="#">Tokyo</a></li>
+                    <li><a href="#">Newyork</a></li>
+                </ul>
+            </aside>
+            <section>
+                <article id="london">
+                    <h1>London</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit rem optio pariatur dolorem excepturi, voluptates, adipisci dolorum consectetur molestiae autem sit facere placeat perspiciatis non sapiente asperiores tempore quaerat veniam!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo amet, aliquid cupiditate deleniti exercitationem fugit nam iusto praesentium vel, omnis quas eveniet consectetur aperiam vero laudantium, cumque et quidem voluptates.
+                    </p>
+                </article>
+                <article id="paris">
+                    <h1>Paris</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis reiciendis quis neque alias praesentium iste ratione nulla dicta hic ut est perferendis nam sapiente omnis, saepe, eius veritatis fugiat minus.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error tempora provident voluptas inventore consequuntur ipsa quibusdam ad aperiam tenetur modi officiis, omnis odit officia sit quae ducimus sunt explicabo quas.
+                    </p>
+                </article>
+                <article id="tokyo">
+                    <h1>Tokyo</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nulla nostrum iusto quia facere tenetur? Enim vel alias magnam suscipit, voluptates aspernatur. Minima, debitis vero. Dolore odit doloribus earum voluptatum.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, accusantium, dolores consequuntur dolorem neque asperiores suscipit nemo voluptatem aliquam eum modi esse incidunt inventore, enim cumque doloribus deleniti architecto atque. </p>
+                </article>
+                <article id="newyork">
+                    <h1>Newyork</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto omnis exercitationem at deleniti porro reiciendis odio officia, officiis vero odit asperiores vitae cumque quas repellendus mollitia labore accusamus nulla atque?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ut ratione est magnam eos architecto aut necessitatibus exercitationem cupiditate quae? Pariatur quos cupiditate accusantium quae ipsa nobis voluptatem ad atque!
+                    </p>
+                </article>
+                
+            </section>
+        </div>
+    </div>
+   
+</body>
+</html>

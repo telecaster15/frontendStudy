@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+   
+    <link rel="stylesheet" href="/HTML/css/stylecss.css"/>
+    <style>
+        body{margin: 0;}
+        .parent{
+            width: 200px;
+            height: 200px;
+            background: #bcbcbc;
+            border: 1px solid #bcbcbc;
+            margin: 50px 0 0 300px;
+            position: relative;
+            /* position에 relative, absolute, fixed 가 선언되어야 함 */
+        }
+        
+        .absolute-box{
+            position: absolute;
+            height: 200px; width: 200px;
+            top: 50px; left: 50px;
+            color: #e55c3c;
+            font-weight: bold;
+            text-align: center;
+            background: #2e303d;
+            line-height: 200px;
+            font-family: fantasy;
+            font-weight: lighter;
+        }
+        .common{
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+<div class="common">Common</div>
+<div class="parent">
+    <div class="absolute-box">absolute box(in parent)</div>
+</div>
+<div class="absolute-box">absolute box(no parent)</div>
+    
+    <hr><center>
+        <a href="/index.html"><input type="button" value="Index"></a>
+    </center>
+</body>
+</html>

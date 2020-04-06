@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="stylesheet" href="/HTML/css/stylecss.css"/>
+    <style>
+        body{margin: 0;}
+        .normal-box{
+            width: 100px; height: 100px;
+            
+        }
+        .absolute-box{
+            width: 100px; height: 100px;
+            position: absolute;
+        }
+        .orange{
+            background-color: orangered;
+            z-index: 1000;
+        }
+        .red{
+            background-color: darkred;
+            left:50px; top:50px;
+            z-index:100;
+        }
+        .green{
+            background-color: darkgreen;
+            left: 100px; top:100px;
+            z-index: 50;
+        }
+        .blue{
+            background-color: darkblue;
+            left: 150px; top:150px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="normal-box orange"></div>
+    <div class="absolute-box red"></div>
+    <div class="absolute-box green"></div>
+    <div class="absolute-box blue"></div>
+    <hr><center>
+        <a href="/index.html"><input type="button" value="Index"></a>
+    </center>
+</body>
+</html>
