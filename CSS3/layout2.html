@@ -25,13 +25,15 @@
             text-decoration: none;
         }
 
+    
         header{
             position: fixed;
             top:0;
             width:100%;
             height:60px;
-            background-color:rgb(127, 183, 218);
+            background-color:rgb(212, 222, 243);
             box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(0, 0, 0, 0.05);
+            z-index: 2000;
         }
         nav{
             float: right;
@@ -93,9 +95,17 @@
             margin-left: 200px;
         }
         article{
-            margin: 10px;
+            width: 48.5%;
+            margin: 1%;
             padding:25px;
-            /* background-color: white; */
+            background-color: white;
+            float: left;
+        }
+        article:nth-of-type(2n){
+            margin-left: 0;
+        }
+        article:nth-of-type(n+3){
+            margin-top: 0;
         }
         h1{font-size: 1.8em;}
         h1, h2, h3, h4, h5, h6, p{
@@ -120,6 +130,123 @@
             background-color: #f2f2f2;
             text-align: center;
         }
+        .navicon{
+            cursor: pointer;
+            height: 60px;
+            padding: 28px 15px;
+            position: absolute;
+            top:0; right: 0;
+        }
+        .navicon-bar{
+            display: block;
+            width: 20px;
+            height: 3px;
+            background-color: #333;
+        }
+        .navicon-bar::before,
+        .navicon-bar::after{
+            background-color: #333;
+            content: "";
+            display: block;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            transition: background-color .2s ease-out;
+        }
+        .navicon-bar::before{top:-7px;}
+        .navicon-bar::after{top:7px;}
+        .navicon-bar{
+            background-color: #333;
+            display: block;
+            position: relative;
+            width:20px;
+            height: 3px;
+            transition: background-color .2s ease-out;
+
+        }
+        .nav-toggle:checked ~ .navicon > .navicon-bar{
+            background: transparent;
+        }
+        .nav-toggle:checked ~ .navicon> .navicon-bar::before{
+            transform: rotate(45deg);
+            top:0;
+        }
+        .nav-toggle:checked ~ .navicon > .navicon-bar::after{
+            transform: rotate(-45deg);
+            top:0;
+        }
+        .nav-toggle {
+         display: none;
+        }
+        .navicon {
+          display: none;
+        }
+        
+        @media screen and (max-width: 480px) {
+            header{
+                height: 60px;
+            }
+            .nav-it{
+                display: none;
+            }
+            .navicon{
+                display: block;
+            }
+            #wrap{
+                margin-top: 60px;
+            }
+            aside{
+                top:60px;
+            }
+            aside > ul{width: 100%;}
+            aside > h1 {padding: 5px 0 10px 20px;}
+            section{float: none; margin-left:0;}
+            .nav-toggle:checked ~.nav-it{
+                display: block;
+                width: 100%;
+                background-color: #fff;
+                box-shadow : 0 2px 2px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(0, 0, 0, 0.05);
+            }
+            .nav-it > li{
+                display: block;
+            }
+            .nav-it>li > a{
+                line-height: 50px;
+            }
+            aside{
+                top:60px;
+                position: static;
+                width: 100%;
+                padding: 5px 0;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+           header{
+               height: 120px;
+               text-align: center;
+           }
+           #warp{
+               margin-top: 20px;
+           }
+           aside{
+               top:120px;
+           }
+           nav{
+               float: none;
+           }
+           article{
+               width:initial;
+               display: block;
+               margin: 10px;
+           }
+           article:nth-of-type(2n){
+               margin: 10px;
+           }
+           article:nth-of-type(n+3){
+               margin: 10px;
+           }
+        }
     </style>
 </head>
 <body>
@@ -130,6 +257,8 @@
                 <img src="https://www.pngkey.com/png/full/66-666156_this-free-icons-png-design-of-code-break.png" alt="logo" height="60px" width="auto">
             </a>
             <nav>
+                <input type="checkbox" class="nav-toggle" id="nav-toggle">
+                <label class="navicon" for="nav-toggle"><span class="navicon-bar"></span></label>
                 <ul class="nav-it">
                     <li><a href="/index.html">Home</a></li>
                     <li><a href="#">News</a></li>
@@ -175,10 +304,10 @@
                 
             </section>
      
-
         </div>
-        <footer>© Copyleft 2020</footer>
+<footer>© Copyleft 2020</footer>
+        
     </div>
-   
+    
 </body>
 </html>
