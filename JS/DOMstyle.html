@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <script>
+            const element =document.querySelector('.box');
+            const width = getStlye(element, 'width');
+            const height = getStlye(element, 'height');
+            const backgroundColor = getStlye(element, 'background-color');
+            const border = getStlye(element, 'border');
+
+            console.log('width : '+ width);
+            console.log('height : ' + height);
+            console.log('backgroundColor : ' + backgroundColor);
+            console.log('border : ' + border);
+
+
+            // style 프로퍼티의 값을 취득하려면 window.getComputedStyle을 사용한다.
+            function getStlye(element, prop) {
+                var result = window.getComputedStyle(element,null).getPropertyValue(prop);
+                return result;
+            }
+
+
+        </script>
+
+    </div>
+</body>
+</html>
