@@ -24,3 +24,5 @@
 ## 0410 : 문서 객체 모델(DOM)
 
 ## 0413 : DOM 스타일(DOM style), 동기식 처리 모델 vs 비동기식 처리 모델(async), 이벤트(Event), Ajax, 로그인, JSON, let, const와 블록 레벨 스코프, 템플릿 리터럴, 화살표 함수(veriable2)
+
+## 0414 : JQuery Basics, JQuery Ajax&JSON 
