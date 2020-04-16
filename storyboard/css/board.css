@@ -1,0 +1,11 @@
+#TXT{
+
+    width: 300px;
+    height: 300px;
+    overflow: scroll;
+}
+
+.l_tb > table{
+    border: 1px solid black
+;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>StoryBoard</title>
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/join.css">
+
+</head>
+<body>
+<header>
+    <a class="logo" href="">
+        <input type="image" src="https://www.google.com/logos/doodles/2020/stay-home-save-lives-april-15-copy-6753651837108782-law.gif" alt="logo" id="logo">
+    </a>
+    <nav>
+        <ul class="nav-it">
+            <li><a href="../login/login.html">Login</a> </li>
+            |
+            <li><a href="../join/join.html">회원가입</a></li>
+        </ul>
+
+    </nav>
+</header>
+<div class="join_header">
+    <h1>회원 가입</h1>
+</div>
+<form onsubmit="return join()" id="join_form" name="join_form" action="../index1.html" method="post">
+<fieldset>
+
+<div class="join_input">
+<h2>사이트 이용정보 입력</h2>
+    <input type="text" name="userID" id="userID" placeholder="아이디"><br>
+    <label for="userID">영문자, 숫자, _만 입력 가능, 최소 3자이상 입력하시오.</label><br>
+    <input type="password" name="userPWD" id="userPWD" placeholder="비밀번호"><br>
+    <input type="password" name="userPWDre" id="userPWDre" placeholder="비밀번호확인"><br>
+<br><br>
+    <h2>개인정보 입력</h2>
+    <input type="text" name="userName" id="userName" placeholder="이름"><br>
+    <label for="userName">공백없이 한글,영문,숫자만 입력 가능 (한글2자, 영문4자 이상)</label><br>
+    <label for="userNick">닉네임을 바꾸시면 앞으로 60일 이내에는 변경 할 수 없습니다.</label><br>
+    <input type="text" name="userNick" id="userNick" placeholder="닉네임"><br>
+    <input type="text" name="userEmail" id="userEmail" placeholder="E-mail"><br>
+</div>
+<div class="buttons">
+<button type="submit" id="cancel"><a href="../login/login.html">취소</a></button>
+<button type="submit" id="submit">회원가입</button>
+</div>
+
+</fieldset>
+</form>
+<footer>
+    <div class="blur">이용약관 | 개인정보취급방침<br></div>
+    서울특별시 구로구 디지털로 306 (구로동, 대륭포스트타워 2차 212호,218호,219호)  <div class="blur"> |  t. 02-2082-1688  |  F. 031-000-0000
+    <br>Copyright </div>ⓒ THEJOEUN ACADEMY Corp.<div class="blur">. All Rights Reserved.</div>
+</footer>
+
+<script src="../../js/join.js"></script>
+</body>
+</html>

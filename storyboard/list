@@ -1,0 +1,15 @@
+프로그램목록
+=============================
+화면설계_이름.zip
+www_root/storyboard
+html/index0.html(로그인 전),index1.html(로그인 후)
+html/login/login.html
+html/join/join.html
+css/common.css, login.css, join.css
+js/login.js, join.js
+=============================
+화면구현_이름.zip
+html/board/list.html, write.html, update.html, delete.html
+css/common.css, board.css
+js/board.js
+img/common, login, join, board

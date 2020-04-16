@@ -1,0 +1,17 @@
+
+.join_header{
+    display: inline-block;
+    border: 1px solid black;
+    height:auto;
+    width: 100%;
+    margin: 10px 20px 10px 20px;
+    padding: 10px 10px 10px 10px;
+}
+input{
+    width: 60%;
+}
+
+label{
+    color:cornflowerblue;
+    font-size: 12px;
+}
