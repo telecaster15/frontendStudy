@@ -5,10 +5,14 @@
     display: inline-block;
 }
 
+
 fieldset{
+    line-height: 130%;
+    margin: 100px auto;
     padding: 20px 20px 20px 20px;
     text-align: center;
-    margin: 0 auto;
+    background-color:dodgerblue;
+
 }
 #userID{
     width: 100%;
@@ -17,9 +21,6 @@ fieldset{
 #userPWD{
     width: 100%;
     height: 20px;
-}
-div.login{
-    margin: 10px 0 30px 0;
 }
 
 .button {
@@ -33,4 +34,9 @@ div.login{
 
     background: #0072C6;
     color: #fff;
+}
+
+p{
+    font-size: 1.8em;
+
 }

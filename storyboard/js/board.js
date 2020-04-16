@@ -27,6 +27,12 @@ return true
 }
 
 function deltesting() {
-    
+    var delPwd = document.querySelector('#userPWD');
+
+    if(!delPwd.value.length){
+        alert("비밀번호는 필수 입력 입니다.")
+        userPWD.focus();
+        return false;
+    }
 
 }

@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>StoryBoard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../css/common.css">
     <link rel="stylesheet" href="../../css/login.css">
 
 </head>
 <body>
-<header>
+<header id="header">
+
     <a class="logo" href="">
         <input type="image" src="https://www.google.com/logos/doodles/2020/stay-home-save-lives-april-15-copy-6753651837108782-law.gif" alt="logo" id="logo">
     </a>
@@ -21,19 +23,20 @@
     </nav>
 </header>
 
+<div class="container">
 <form onsubmit="return login()" id="login_form" name="login_form" action="../index1.html" method="post">
 <fieldset>
     <h1>로그인</h1>
     <div class="login">
     <input type="text" name="userID" id="userID" placeholder="아이디(필수)"><br>
     <input type="password" name="userPWD" id="userPWD" placeholder="비밀번호(필수)"><br>
-    </div>
-    <button type="submit" class="button">로그인</button>
+    </div><br>
+    <button type="submit" class="button"><p>로그인</p></button>
 
 </fieldset>
 
 </form>
-
+</div>
 <footer>
     <div class="blur">이용약관 | 개인정보취급방침<br></div>
     서울특별시 구로구 디지털로 306 (구로동, 대륭포스트타워 2차 212호,218호,219호)  <div class="blur"> |  t. 02-2082-1688  |  F. 031-000-0000

@@ -3,22 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>StoryBoard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/common.css">
 
     <style>
-        .board{
-            width: 1200px;
-            border:1px solid rgba(0 0 0 0);
-            padding:50px;
-            margin:0 auto;
+        .container{
+            margin: 100px auto;
         }
         table{
-            border: 1px solid black;
             margin-bottom: 10px;
         }
         table > th{
             text-align: center;
             height: 20px;
+
         }
         .title{
             width: 500px;
@@ -32,7 +30,7 @@
 
 </head>
 <body>
-<header>
+<header id="header">
     <a class="logo" href="">
         <input type="image" src="https://www.google.com/logos/doodles/2020/stay-home-save-lives-april-15-copy-6753651837108782-law.gif" alt="logo" id="logo">
     </a>
@@ -46,35 +44,36 @@
     </nav>
 </header>
 
-<div class="board">
-    <table border="1">
+<div class="container" >
+    <table class="table table-striped">
+        <thead>
         <tr>
             <th>번호</th>
             <th class="title">제 목</th>
             <th>작성자</th>
             <th>작성일</th>
             <th>조회</th>
-        </tr>
+        </tr></thead>
         <tr>
             <td>3</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Lorem ipsum!</td>
+            <td>홍길동</td>
+            <td>2020-04-17</td>
+            <td>54</td>
         </tr>
         <tr>
             <td>2</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Lorem ipsum?</td>
+            <td>김길동</td>
+            <td>2020-04-16</td>
+            <td>91</td>
         </tr>
         <tr>
             <td>1</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Lorem ipsum...</td>
+            <td>홍길동</td>
+            <td>2020-04-16</td>
+            <td>148</td>
         </tr>
         <tr>
             <td colspan="5" class="indexpage">1</td>
@@ -85,7 +84,7 @@
    <a href="../html/borad/write.html"> <input type="button" value="글쓰기"></a>
 </div>
 
-<footer>
+<footer id="footer">
     <div class="blur">이용약관 | 개인정보취급방침<br></div>
     서울특별시 구로구 디지털로 306 (구로동, 대륭포스트타워 2차 212호,218호,219호)  <div class="blur"> |  t. 02-2082-1688  |  F. 031-000-0000
     <br>Copyright </div>ⓒ THEJOEUN ACADEMY Corp.<div class="blur">. All Rights Reserved.</div>

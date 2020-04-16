@@ -12,8 +12,8 @@
 
 </head>
 <body>
-<header>
-    <a class="logo" href="">
+<header id="header">
+<a class="logo" href="">
         <input type="image" src="https://www.google.com/logos/doodles/2020/stay-home-save-lives-april-15-copy-6753651837108782-law.gif" alt="logo" id="logo">
     </a>
     <nav>
@@ -32,9 +32,14 @@
 
 <form onsubmit="return deltesting()" id="write_form" name="write_form" action="list.html" method="post">
 
-    <h2>글 수정하기</h2>
-    <table class="w_tb">
 
+    <table class="d_tb">
+        <tr>
+            <td>작성자의 비밀번호를 입력해 주세요.</td>
+        </tr>
+        <tr>
+            <td><input type="password" name="userPWD" id="userPWD"></td>
+        </tr>
 
 
     </table>
